@@ -22,6 +22,7 @@ router.get("/software", checkRole(software), (req,res) => {
       .catch(err => res.send(err));
 });
 
+
 router.get("/sales", checkRole(sales), (req,res) => {
     Users.find()
       .then(users => {
